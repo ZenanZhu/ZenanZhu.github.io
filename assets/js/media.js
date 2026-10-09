@@ -11,7 +11,7 @@ window.PORTFOLIO = {
       alt: "Portrait of Zenan Zhu", caption: ""
     },
     inekf: {
-      type: "image", src: "assets/images/coordinates_f_v3.svg", // e.g. "assets/images/inekf.jpg"
+      type: "video", src: "assets/videos/AIM_video.mp4", // e.g. "assets/images/inekf.jpg"
       alt: "Sensor coordinate frames and validation results for the InEKF project",
       caption: ""
     },
