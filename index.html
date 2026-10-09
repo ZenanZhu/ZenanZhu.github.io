@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: update these two fields when your research focus changes. -->
+  <title>Zenan Zhu | State Estimation, Robot Learning &amp; Human–Robot Dynamics</title>
+  <meta name="description" content="Zenan Zhu is a Mechanical Engineering Ph.D. researcher at Purdue University working on state estimation, robot learning, and human–exoskeleton dynamics.">
+  <meta name="theme-color" content="#171d25">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zenan Zhu | Robotics Research Portfolio">
+  <meta property="og:description" content="State estimation, robot learning, and human–robot dynamics. Research at Purdue University.">
+  <!-- Add your real canonical URL and og:image only after deployment. -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/media.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Zenan Zhu, back to top"><span class="brand-mark" aria-hidden="true">ZZ</span><span>Zenan Zhu</span></a>
+      <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">PURDUE UNIVERSITY · MECHANICAL ENGINEERING</p>
+        <h1 id="hero-title">Zenan Zhu<span class="name-dot">.</span></h1>
+        <p class="hero-focus">State estimation.<br>Robot learning.<br>Human–robot dynamics.</p>
+        <!-- EDIT: homepage biography. Keep achievements distinct from research interests. -->
+        <p class="hero-bio">I am a Ph.D. researcher advised by Prof. Yan Gu in the TRACE Lab. I develop model-based and learning-based methods for human movement estimation and adaptive wearable robotics, connecting mathematical models, sensor data, and experimental systems.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="button secondary" data-document="resume" hidden>View résumé <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:akitonan@outlook.com">Get in touch <span aria-hidden="true">↗</span></a></div>
+        <p class="availability"><span aria-hidden="true"></span>Open to robotics research &amp; engineering opportunities</p>
+      </div>
+      <aside class="research-panel" aria-label="Research focus">
+        <div class="panel-top"><div class="portrait-slot" data-media="portrait"><span aria-hidden="true">ZZ</span><span class="sr-only">Portrait placeholder</span></div><div><p class="panel-eyebrow">RESEARCH PORTFOLIO</p><p class="panel-location">West Lafayette, Indiana</p></div></div>
+        <p class="panel-heading">Understanding motion.<br>Adapting assistance.</p>
+        <div class="focus-row"><span class="focus-index">01</span><div><strong>Estimate</strong><p>Motion states, calibration &amp; uncertainty</p></div></div>
+        <div class="focus-row"><span class="focus-index">02</span><div><strong>Adapt</strong><p>Few-shot learning across people &amp; terrains</p></div></div>
+        <div class="focus-row"><span class="focus-index">03</span><div><strong>Model &amp; control</strong><p>Coupled human–robot dynamics</p></div></div>
+        <div class="panel-bottom"><span>MECHANICS × LEARNING</span><span aria-hidden="true">↗</span></div>
+      </aside>
+    </section>
+    <section class="projects-section container section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">Research &amp; projects</h2></div><p>From geometric filtering to data-efficient learning and human–exoskeleton control.</p></div>
+      <div class="project-grid"><article class="project-card" id="inekf">
+  <div class="project-media" data-media="inekf">
+    <div class="media-placeholder"><span class="placeholder-number" aria-hidden="true">01</span><div><p class="placeholder-title">Sensor frames &amp; estimation results</p><p class="placeholder-hint">IMU placement diagram, experiment, or estimator comparison</p></div><span class="placeholder-label">MEDIA TO BE ADDED</span></div>
+  </div>
+  <div class="project-body">
+    <p class="status published">Published research · 2022</p>
+    <h3>State estimation under sensor misalignment</h3>
+    <p class="method">Invariant extended Kalman filtering</p>
+    <p>I developed an augmented invariant extended Kalman filter (InEKF) that explicitly estimates IMU-to-segment placement offsets while estimating body motion. The approach combines inertial sensing with leg kinematics to reduce the effects of imperfect sensor placement.</p>
+    <div class="tags" aria-label="Project topics"><span>State estimation</span><span>Lie groups</span><span>Sensor fusion</span></div>
+    <details class="project-details"><summary>Contribution, method &amp; evidence <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4>
+<p>Developed the augmented state representation, sensor-misalignment model, and filtering formulation; investigated observability and evaluated the estimator against an existing contact-aided InEKF.</p>
+<h4>Method & validation</h4>
+<p>The deterministic process model preserves a group-affine structure. Inertial data and stance-leg kinematic constraints provide complementary information. The journal study evaluated three participants during squatting, rolling-foot walking, and ladder climbing.</p>
+<h4>Result & scope</h4>
+<p>The proposed filter improved velocity estimation and convergence in the reported experiments. Its measurement model is not in an invariant observation form; absolute position and yaw are not observable from the available measurements. These results are not a claim of globally guaranteed full-state convergence.</p></div></details>
+    <div class="project-links"><a href="https://doi.org/10.1109/TMECH.2022.3175988" target="_blank" rel="noopener noreferrer">Journal paper <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2205.07800" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a data-document="inekfPaper" hidden>Paper PDF <span aria-hidden="true">↗</span></a><a data-code="inekf" hidden>Code <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="project-card" id="maml">
+  <div class="project-media" data-media="maml">
+    <div class="media-placeholder"><span class="placeholder-number" aria-hidden="true">02</span><div><p class="placeholder-title">Learning framework &amp; adaptation results</p><p class="placeholder-hint">Network architecture, wearable setup, or adaptation curves</p></div><span class="placeholder-label">MEDIA TO BE ADDED</span></div>
+  </div>
+  <div class="project-body">
+    <p class="status published">Published research · RA-L 2026</p>
+    <h3>Fast adaptation for gait &amp; terrain estimation</h3>
+    <p class="method">Model-agnostic meta-learning</p>
+    <p>I co-developed a multi-output learning framework that estimates gait phase, locomotion mode, and terrain incline from four fabric-based sensors. Meta-learning trains an initialization that adapts to unseen users with a small labeled calibration set.</p>
+    <div class="tags" aria-label="Project topics"><span>Meta-learning</span><span>Time-series learning</span><span>Wearable sensing</span></div>
+    <details class="project-details"><summary>Contribution, method &amp; evidence <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4>
+<p>Co-first-author work on a MAML-based estimation framework, including model development and experimental evaluation using wearable soft-sensor data.</p>
+<h4>Method & validation</h4>
+<p>A shared one-dimensional convolutional network feeds three prediction heads. The locomotion-mode estimate also informs gait-phase and incline predictions. Evaluation uses leave-one-subject-out testing across nine participants and five locomotion modes.</p>
+<h4>Reported results</h4>
+<p>The final paper reports mean gait-phase accuracy of 85%, locomotion-mode accuracy of 100%, and incline RMSE of 2.67° with 3.5 seconds of labeled calibration data per locomotion/speed condition and four fine-tuning steps (Table I). These are results within the reported evaluation, not guarantees for new deployments.</p>
+<p>Adaptation remains supervised. The study evaluates estimation; it does not establish a reduction in effort or metabolic cost from exoskeleton assistance.</p></div></details>
+    <div class="project-links"><a href="https://doi.org/10.1109/LRA.2026.3675944" target="_blank" rel="noopener noreferrer">Journal paper <span aria-hidden="true">↗</span></a><a data-document="mamlPoster" hidden>Poster PDF <span aria-hidden="true">↗</span></a><a data-code="maml" hidden>Code <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="project-card" id="joint-ekf">
+  <div class="project-media" data-media="joint-ekf">
+    <div class="media-placeholder"><span class="placeholder-number" aria-hidden="true">03</span><div><p class="placeholder-title">Joint-angle estimation &amp; calibration</p><p class="placeholder-hint">Sensor setup and knee-angle / gain / offset trajectories</p></div><span class="placeholder-label">MEDIA TO BE ADDED</span></div>
+  </div>
+  <div class="project-body">
+    <p class="status poster">Poster presentation · IROS 2023</p>
+    <h3>Auto-calibrating joint-angle estimation</h3>
+    <p class="method">Extended Kalman filtering with fabric sensors</p>
+    <p>I developed an EKF-based approach that maps raw fabric-sensor measurements to joint angles while estimating sensor calibration parameters. The estimator combines soft-sensor signals, exoskeleton IMU data, and lower-limb kinematics.</p>
+    <div class="tags" aria-label="Project topics"><span>EKF</span><span>Online calibration</span><span>Joint kinematics</span></div>
+    <details class="project-details"><summary>Contribution, method &amp; evidence <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4>
+<p>Formulated an estimator that augments joint angles with sensor-to-angle gains and offsets, and uses IMU dynamics and foot-contact kinematics to constrain estimation.</p>
+<h4>Preliminary validation</h4>
+<p>The IROS 2023 poster presents squatting experiments with motion-capture reference data. One scenario uses motion-capture-derived angles as estimator inputs; the raw-fabric-sensor scenario estimates the left knee angle.</p>
+<h4>Scope</h4>
+<p>The formulation targets hip and knee estimation, but the reported raw-sensor validation does not demonstrate simultaneous estimation of all four joints. The linear sensor-to-angle assumption is an approximation, not a complete model of fabric-sensor hysteresis.</p></div></details>
+    <div class="project-links"><a data-document="jointPoster" hidden>Poster PDF <span aria-hidden="true">↗</span></a><a data-code="joint-ekf" hidden>Code <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="project-card" id="reduced-model">
+  <div class="project-media" data-media="reduced-model">
+    <div class="media-placeholder"><span class="placeholder-number" aria-hidden="true">04</span><div><p class="placeholder-title">Coupled model &amp; center-of-mass motion</p><p class="placeholder-hint">Model schematic, parameter identification, or prediction results</p></div><span class="placeholder-label">MEDIA TO BE ADDED</span></div>
+  </div>
+  <div class="project-body">
+    <p class="status ongoing">Modeling study · Preliminary</p>
+    <h3>Reduced-order human–exoskeleton dynamics</h3>
+    <p class="method">Mechanics-based modeling &amp; parameter identification</p>
+    <p>I derived a reduced-order model of the coupled human–exoskeleton system to estimate center-of-mass motion and support model-based planning of assistive torque. This work connects interpretable dynamics with wearable-robot control design.</p>
+    <div class="tags" aria-label="Project topics"><span>Dynamics</span><span>Reduced-order modeling</span><span>System identification</span></div>
+    <details class="project-details"><summary>Contribution, method &amp; evidence <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4>
+<p>Derived reduced-order dynamics for the coupled system and investigated spring-loaded inverted-pendulum (SLIP) approximations, contact assumptions, and recursive least-squares parameter identification.</p>
+<h4>Modeling questions</h4>
+<p>The work examines how model parameters and foot-contact assumptions affect center-of-mass predictions, and how exoskeleton torque inputs can be incorporated into a tractable model.</p>
+<h4>Scope</h4>
+<p>This project is presented as a modeling and preliminary simulation study. Experimental validation of a complete model-based assistance controller is not claimed.</p></div></details>
+    <div class="project-links"><a data-document="modelNote" hidden>Project note <span aria-hidden="true">↗</span></a><a data-code="reduced-model" hidden>Code <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="project-card" id="rl">
+  <div class="project-media" data-media="rl">
+    <div class="media-placeholder"><span class="placeholder-number" aria-hidden="true">05</span><div><p class="placeholder-title">Human + Dephy ExoBoots replay</p><p class="placeholder-hint">Video slot · add your training replay when ready</p></div><span class="placeholder-label">MEDIA TO BE ADDED</span></div>
+  </div>
+  <div class="project-body">
+    <p class="status ongoing">Ongoing work · Simulation</p>
+    <h3>RL for human–exoskeleton simulation</h3>
+    <p class="method">Policy training &amp; replay with MyoAssist</p>
+    <p>I am training and replaying locomotion policies for a simulated human model coupled to Dephy ExoBoots using MyoAssist. This ongoing work extends my research toward learning-based control of physically coupled human–robot systems.</p>
+    <div class="tags" aria-label="Project topics"><span>Reinforcement learning</span><span>Musculoskeletal simulation</span><span>MyoAssist</span></div>
+    <details class="project-details"><summary>Contribution, method &amp; evidence <span aria-hidden="true">+</span></summary><div class="details-content"><h4>Current work</h4>
+<p>Running reinforcement-learning experiments and inspecting policy rollouts for the coupled human–exoskeleton simulation.</p>
+<h4>Framework credit</h4>
+<p>This work uses the open-source MyoAssist framework from the NeuMove Lab. The framework and its underlying models are credited to their original developers; they are not presented as my own software framework.</p>
+<h4>Scope</h4>
+<p>The replay is a simulation demonstration. It does not by itself establish reduced muscle effort, better assistance, robustness across conditions, or successful transfer to physical hardware.</p></div></details>
+    <div class="project-links"><a href="https://myoassist.neumove.org/" target="_blank" rel="noopener noreferrer">MyoAssist framework <span aria-hidden="true">↗</span></a><a data-document="rlNote" hidden>Project note <span aria-hidden="true">↗</span></a><a data-code="rl" hidden>Code <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="project-card" id="exo-control">
+  <div class="project-media" data-media="exo-control">
+    <div class="media-placeholder"><span class="placeholder-number" aria-hidden="true">06</span><div><p class="placeholder-title">From soft sensing to torque assistance</p><p class="placeholder-hint">Control pipeline, hardware demonstration, or torque profile</p></div><span class="placeholder-label">MEDIA TO BE ADDED</span></div>
+  </div>
+  <div class="project-body">
+    <p class="status poster">AIM 2024 poster · Ongoing extension</p>
+    <h3>Soft-sensor-driven exoskeleton control</h3>
+    <p class="method">Gait-event timing &amp; personalized assistance</p>
+    <p>I implemented a preliminary gait-event-based ankle torque interface using hip and knee fabric sensors, and proposed a personalized control framework combining Transformer-based gait recognition with meta-learning.</p>
+    <div class="tags" aria-label="Project topics"><span>Exoskeleton control</span><span>Gait events</span><span>Personalization</span></div>
+    <details class="project-details"><summary>Contribution, method &amp; evidence <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4>
+<p>Developed a soft-sensor-based interface for gait-event detection and polynomial ankle torque profiles. The broader proposed framework combines gait recognition and meta-learning to adapt assistance to biomechanics and user preference.</p>
+<h4>Preliminary validation</h4>
+<p>The AIM 2024 work reports a preliminary treadmill demonstration with Dephy ExoBoots and motion-capture reference timing, illustrating the connection between fabric-sensor measurements and commanded torque.</p>
+<h4>Scope</h4>
+<p>The preliminary hardware demonstration and the proposed personalization framework are distinct stages. Biomechanical benefits and the effectiveness of the complete personalization framework require further validation.</p></div></details>
+    <div class="project-links"><a data-document="controlPoster" hidden>Poster / abstract PDF <span aria-hidden="true">↗</span></a><a data-code="exo-control" hidden>Code <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div>
+    </section>
+    <section class="publications-section section" id="publications" aria-labelledby="publications-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">02 / RESEARCH OUTPUT</p><h2 id="publications-title">Publications &amp; presentations</h2></div><a class="text-link" href="https://scholar.google.com/citations?user=f2YkM1oAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a></div>
+        <h3 class="list-heading">Peer-reviewed papers</h3>
+        <div class="publication-list">
+          <article class="publication"><p class="publication-year">2026</p><div><p class="publication-type">IEEE ROBOTICS AND AUTOMATION LETTERS</p><h4>Model-Agnostic Meta-Learning for Adaptive Gait Phase and Terrain Geometry Estimation With Wearable Soft Sensors</h4><p class="authors"><strong>Z. Zhu*</strong>, W. Chen*, P.-C. Kao, J. Clark, L. Behnke, R. Kramer-Bottiglio, H. Yanco, and Y. Gu</p><p class="citation-meta">Vol. 11, no. 5, pp. 5757–5764, May 2026. *Equal contribution.</p><div class="project-links"><a href="https://doi.org/10.1109/LRA.2026.3675944" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="#maml">Project</a><a data-document="mamlPaper" hidden>Author manuscript</a></div></div></article>
+          <article class="publication"><p class="publication-year">2022</p><div><p class="publication-type">IEEE/ASME TRANSACTIONS ON MECHATRONICS</p><h4>Design and Evaluation of an Invariant Extended Kalman Filter for Trunk Motion Estimation With Sensor Misalignment</h4><p class="authors"><strong>Z. Zhu</strong>, S. M. R. Sorkhabadi, Y. Gu, and W. Zhang</p><p class="citation-meta">Vol. 27, no. 4, pp. 2158–2167, August 2022.</p><div class="project-links"><a href="https://doi.org/10.1109/TMECH.2022.3175988" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2205.07800" target="_blank" rel="noopener noreferrer">arXiv <span aria-hidden="true">↗</span></a><a href="#inekf">Project</a></div></div></article>
+          <article class="publication"><p class="publication-year">2022</p><div><p class="publication-type">AMERICAN CONTROL CONFERENCE</p><h4>Invariant Extended Kalman Filtering for Human Motion Estimation with Imperfect Sensor Placement</h4><p class="authors"><strong>Z. Zhu*</strong>, S. M. R. Sorkhabadi*, Y. Gu, and W. Zhang</p><p class="citation-meta">Proceedings of ACC, pp. 3012–3018, 2022. *Equal contribution.</p><div class="project-links"><a data-document="accPaper" hidden>Author manuscript <span aria-hidden="true">↗</span></a><a href="#inekf">Related project</a></div></div></article>
+        </div>
+        <h3 class="list-heading presentation-heading">Selected poster presentations</h3>
+        <div class="presentation-grid">
+          <article><p class="publication-type">AIM · 2024</p><h4>Exoskeleton Controller Based on Soft Sensor Inputs</h4><p>Z. Zhu and Y. Gu</p><a href="#exo-control">View project <span aria-hidden="true">↗</span></a></article>
+          <article><p class="publication-type">IROS · 2023</p><h4>Joint Angle Estimation Using Soft Wearable Sensor Measurement</h4><p>Z. Zhu, J. P. Clark, L. Sanchez-Botero, A. Agrawala, R. Kramer-Bottiglio, P.-C. Kao, H. Yanco, and Y. Gu</p><a href="#joint-ekf">View project <span aria-hidden="true">↗</span></a></article>
+          <article><p class="publication-type">ICRA · 2022</p><h4>Soft, Wearable Sensors for Comfortable Joint-Angle Measurement in Lower-Limb Exoskeletons</h4><p>J. P. Clark, Z. Zhu, A. Agrawala, L. Sanchez-Botero, R. Kramer-Bottiglio, P.-C. Kao, and Y. Gu</p><a data-document="icraPoster" hidden>Poster PDF <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+    <section class="about-section container section" id="about" aria-labelledby="about-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / BACKGROUND</p><h2 id="about-title">About me</h2></div></div>
+      <div class="about-grid">
+        <div><p class="large-copy">I work at the intersection of mechanics, state estimation, and learning.</p><p>My research combines analytical modeling with wearable sensing and human-subject experiments. I am interested in applying these methods to robotics research and engineering, including wearable, legged, and humanoid systems.</p><p>I also teach and mentor students in mechanics and control. At Purdue, I have served as a lead teaching assistant for ME 270 and supported courses in dynamics, automatic control, and advanced control.</p><div class="award"><span class="eyebrow">TEACHING RECOGNITION</span><p>Estus H. and Vashti L. Magoon Award for Excellence in Teaching<br><strong>Purdue University · 2026</strong></p></div><a class="text-link" href="https://www.thetracelab.com/" target="_blank" rel="noopener noreferrer">TRACE Lab <span aria-hidden="true">↗</span></a></div>
+        <div class="background-column">
+          <h3>Education &amp; research</h3>
+          <div class="education-item"><p class="date-label">2022–PRESENT</p><h4>Purdue University</h4><p>Ph.D. research in Mechanical Engineering<br>Advisor: Prof. Yan Gu</p></div>
+          <div class="education-item"><p class="date-label">2020–2022</p><h4>University of Massachusetts Lowell</h4><p>Doctoral study and graduate research in Mechanical Engineering</p></div>
+          <div class="education-item compact"><h4>University of Massachusetts Lowell</h4><p>M.S., Mechanical Engineering · 2020<br>B.S., Mechanical Engineering · 2019<br><em>Summa Cum Laude</em></p></div>
+          <div class="education-item compact"><h4>Bunker Hill Community College</h4><p>A.S., General Engineering · 2016</p></div>
+          <h3 class="skills-heading">Tools &amp; methods</h3><div class="tags skills"><span>Python</span><span>MATLAB / Simulink</span><span>Kalman filtering</span><span>Meta-learning</span><span>OpenSim</span><span>AnyBody</span><span>Vicon Nexus</span><span>SolidWorks</span><span>MyoAssist</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">04 / LET’S CONNECT</p><h2 id="contact-title">Let’s talk robotics.</h2><p>I am exploring research and engineering opportunities in state estimation, robot learning, and control.</p><a class="contact-email" href="mailto:akitonan@outlook.com">akitonan@outlook.com <span aria-hidden="true">↗</span></a></div><div class="contact-links"><a href="https://www.linkedin.com/in/zenan-zhu-4a5a99126/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=f2YkM1oAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a data-social="github" hidden>GitHub <span aria-hidden="true">↗</span></a><a data-document="resume" hidden>Résumé <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>© <span id="year">2026</span> Zenan Zhu</p><p>Research is collaborative. Coauthors and source frameworks are credited above.</p><a href="#top">Back to top ↑</a></div></footer>
+</body>
+</html>
