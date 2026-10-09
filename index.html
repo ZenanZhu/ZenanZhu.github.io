@@ -35,7 +35,7 @@
 <div class="hero-copy">
 <h1 id="hero-title">Zenan Zhu</h1>
 <!-- EDIT: short English biography. Keep research interests distinct from completed work. -->
-<p>I am a Ph.D. student in Mechanical Engineering at Purdue University, in the <a href="https://www.thetracelab.com/" rel="noopener noreferrer" target="_blank">TRACE Lab</a>.</p>
+<p>I am a Ph.D. student in Mechanical Engineering at Purdue University, advised by Prof. Yan Gu in the <a href="https://www.thetracelab.com/" rel="noopener noreferrer" target="_blank">TRACE Lab</a>.</p>
 <p>My research focuses on state estimation, robot learning, and human–exoskeleton modeling and control. I develop model-based and learning-based methods to estimate human movement and adapt wearable robotic assistance to different users and walking conditions.</p>
 <p>Previously, I received my M.S. and B.S. in Mechanical Engineering from the University of Massachusetts Lowell.</p>
 <nav aria-label="Professional profiles and contact" class="profile-links">
@@ -57,12 +57,12 @@
 <section aria-labelledby="projects-title" class="projects-section container section" id="projects">
 <div class="section-heading"><div><h2 id="projects-title">Research</h2></div></div>
 <div class="project-grid"><article class="project-card" id="inekf">
-<div class="project-visual"><div class="project-media" data-media="inekf"><div class="media-placeholder"><p class="placeholder-title">InEKF</p><p class="placeholder-hint">Figure or experiment</p></div></div></div>
+<div class="project-visual"><div class="project-media-stack"><div class="project-media" data-media="inekf"><div class="media-placeholder"><p class="placeholder-title">InEKF</p><p class="placeholder-hint">Figure or experiment</p></div></div><div class="project-media secondary-media" data-media="inekf-acc-video"><div class="media-placeholder"><p class="placeholder-title">ACC video</p><p class="placeholder-hint">Optional talk or experiment clip</p></div></div></div></div>
 <div class="project-body">
 <p class="status published">Published research · 2022</p>
 <h3>State estimation under sensor misalignment</h3>
 <p class="method">Invariant extended Kalman filtering</p>
-<p>I developed an augmented invariant extended Kalman filter (InEKF) that explicitly estimates IMU-to-segment placement offsets while estimating body motion. The approach combines inertial sensing with leg kinematics to reduce the effects of imperfect sensor placement.</p>
+<p>I developed an augmented invariant extended Kalman filter (InEKF) that explicitly estimates IMU-to-segment placement offsets while estimating body motion. The approach combines inertial sensing with leg kinematics to reduce the effects of imperfect sensor placement. This project now groups both the extended journal version and the earlier ACC conference paper.</p>
 <div aria-label="Project topics" class="tags"><span>State estimation</span><span>Lie groups</span><span>Sensor fusion</span></div>
 <details class="project-details"><summary>Technical details <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4>
 <p>Developed the augmented state representation, sensor-misalignment model, and filtering formulation; investigated observability and evaluated the estimator against an existing contact-aided InEKF.</p>
@@ -70,7 +70,7 @@
 <p>The deterministic process model preserves a group-affine structure. Inertial data and stance-leg kinematic constraints provide complementary information. The journal study evaluated three participants during squatting, rolling-foot walking, and ladder climbing.</p>
 <h4>Result &amp; scope</h4>
 <p>The proposed filter improved velocity estimation and convergence in the reported experiments. Its measurement model is not in an invariant observation form; absolute position and yaw are not observable from the available measurements. These results are not a claim of globally guaranteed full-state convergence.</p></div></details>
-<div class="project-links"><a href="https://doi.org/10.1109/TMECH.2022.3175988" rel="noopener noreferrer" target="_blank">Journal paper <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2205.07800" rel="noopener noreferrer" target="_blank">arXiv <span aria-hidden="true">↗</span></a><a data-document="inekfPaper" hidden="">Paper PDF <span aria-hidden="true">↗</span></a><a data-code="inekf" hidden="">Code <span aria-hidden="true">↗</span></a></div>
+<div class="project-links"><a href="https://doi.org/10.1109/TMECH.2022.3175988" rel="noopener noreferrer" target="_blank">Journal paper <span aria-hidden="true">↗</span></a><a data-document="accPaper" hidden="">ACC paper <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2205.07800" rel="noopener noreferrer" target="_blank">arXiv <span aria-hidden="true">↗</span></a><a data-document="inekfPaper" hidden="">Local PDF <span aria-hidden="true">↗</span></a><a data-code="inekf" hidden="">Code <span aria-hidden="true">↗</span></a></div>
 </div>
 </article>
 <article class="project-card" id="maml">

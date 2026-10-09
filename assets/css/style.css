@@ -59,6 +59,8 @@ strong { font-weight: 600; }
 .project-card:first-child { padding-top: 4px; }
 .project-card:last-child { border-bottom: 0; padding-bottom: 0; }
 .project-visual { min-width: 0; padding-top: 5px; }
+.project-media-stack { display: flex; flex-direction: column; gap: 12px; }
+.secondary-media { aspect-ratio: 16 / 9; }
 .project-media { position: relative; width: 100%; aspect-ratio: 16 / 10; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; }
 .media-placeholder { padding: 18px; width: 100%; text-align: center; }
 .placeholder-title { font-size: 14px; color: #59616a; font-weight: 500; line-height: 1.5; margin: 0 0 5px; }
