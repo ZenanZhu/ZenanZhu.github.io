@@ -6,7 +6,7 @@ This file helps the owner and coding assistants keep the website accurate. It is
 
 The English and Chinese résumés supplied in this conversation contain corresponding research descriptions. The site rewrites those descriptions in English and expands them using the prelim presentation/report and available paper/poster material. The more recent final paper takes precedence when it differs from prelim material. Current résumés take precedence over old projected graduation timelines. No predicted graduation date is displayed.
 
-The public site uses "Ph.D. researcher" at Purdue. The UMass Lowell 2020–2022 entry is "Doctoral study and graduate research", not an assertion that a second Ph.D. was awarded.
+The introduction uses "Ph.D. student in Mechanical Engineering" at Purdue, consistent with the supplied résumés. The UMass Lowell 2020–2022 entry is "Doctoral study and graduate research", not an assertion that a second Ph.D. was awarded.
 
 ## Sources used
 
@@ -57,3 +57,6 @@ The public site uses "Ph.D. researcher" at Purdue. The UMass Lowell 2020–2022 
 Confirm the desired job-search headline and email, current résumé, accurate individual contributions, and permissions for every uploaded figure, video, and PDF. Replace or remove unused placeholders. Review the exact RL training setup before expanding that project. Confirm whether to add an IROS 2026 presentation entry once the owner selects the final poster/talk details.
 
 The starter does not upload or redistribute any source PDFs, deck files, or videos automatically.
+
+## Visual revision
+The introductory layout was simplified at the owner's request, with a biography, portrait placeholder, and plain contact/profile links. Both supplied reference websites were reviewed for layout inspiration only; their biographies, portraits, code, and research content were not copied. The six project descriptions, publication records, and source notes from the previous starter were otherwise retained. No new scientific claims or performance values were introduced in this visual revision.

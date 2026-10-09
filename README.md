@@ -1,3 +1,45 @@
+# Zenan Zhu — simple academic website
+
+This revision replaces the large opening slogans and dark research panel with a short biography, a portrait, and simple profile links. Research projects use compact image-and-text rows. The website remains plain HTML, CSS, and JavaScript.
+
+## Updating the previous starter
+
+**Already edited your website?** Back it up, then replace only:
+
+- `index.html`
+- `assets/css/style.css`
+
+Keep your existing `assets/js/media.js`, research figures, videos, and documents. All media/document keys are unchanged. The existing `assets/js/main.js` also works unchanged. This replacement will replace any custom text you added to `index.html`, so merge your biography/project edits first rather than overwriting them blindly.
+
+You may also replace `AGENTS.md` to give Codex the new simple-design instructions. `CONTENT_NOTES.md` contains the source record.
+
+**Starting fresh?** Use all files in this folder. Upload its contents, not this enclosing folder or ZIP, to your repository root.
+
+## Add your portrait
+
+Put your chosen photo at `assets/images/portrait.jpg`. In `assets/js/media.js`, change only the `src` field of the existing `portrait` object:
+
+```js
+portrait: {
+  type: "image",
+  src: "assets/images/portrait.jpg",
+  alt: "Portrait of Zenan Zhu",
+  caption: ""
+},
+```
+
+The desktop portrait is a 224 × 224 pixel circular frame and scales down on small screens. A square image of at least 600 × 600 pixels is a practical choice. Your actual image is not altered; the CSS controls the visible crop. Adjust `object-position` in `.portrait-slot > img` to change the crop. To use a rounded rectangle instead, change `.portrait-slot` from `border-radius: 50%` to `border-radius: 6px`.
+
+Until you supply a photo, the page shows a neutral placeholder. It does not use a stock photo, a generated person, or a portrait from either reference website.
+
+## What appears in the opening
+
+Name, three short paragraphs, profile/contact links, and a one-line job-search statement. Edit the text in the first `<section class="hero ...">` in `index.html`. The contact links use your résumé's email and existing profile URLs. CV/résumé and GitHub links appear only after their actual path/URL is set in `assets/js/media.js`.
+
+The remaining setup instructions from the original starter follow. They describe the same file structure and publishing method.
+
+---
+
 # Zenan Zhu — research portfolio starter
 
 An English-only, responsive personal website for robotics research and engineering applications. Built with plain HTML, CSS, and a little JavaScript. There is **no package installation, build command, database, or API key**.
@@ -140,8 +182,8 @@ Read AGENTS.md, README.md, and CONTENT_NOTES.md. This repository is my English
 robotics research portfolio, deployed with GitHub Pages from main and /(root).
 Keep it as plain HTML, CSS, and JavaScript with no build step.
 
-Inspect the current site and propose small improvements to the project-card
-layout. Preserve my research claims, publication details, and project status.
+Keep the simple academic layout and compact image-and-text project rows.
+Inspect the current site and propose only small, focused changes. Preserve my research claims, publication details, and project status.
 Do not invent metrics, publications, code links, or hardware-validation claims.
 Do not upload the source reports, private data, or credentials.
 

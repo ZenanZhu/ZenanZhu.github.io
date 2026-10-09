@@ -31,6 +31,14 @@ Maintain Zenan Zhu's English-only robotics research and job-search portfolio. Th
 - Do not fabricate a portrait. Use only a supplied and approved photo.
 - Do not add analytics, external fonts, tracking scripts, or contact-form services without approval.
 
+## Visual design preference
+- Use a simple academic webpage, not a product landing page.
+- The opening contains a short first-person introduction and a real portrait, with plain professional/contact links.
+- Keep white backgrounds, normal-sized headings, subtle separators, and compact project rows.
+- Do not bring back large research slogans, numbered focus panels, dark call-to-action bands, decorative gradients, heavy shadows, or pill-shaped buttons unless the owner explicitly requests them.
+- On desktop, biography is on the left and portrait on the right; on mobile, the portrait stacks above the biography.
+- Preserve the `project-visual` wrapper so optional captions stay with the image/video.
+
 ## User experience
 - Preserve readable text and layout at 375, 768, and 1440 CSS pixels.
 - Keep semantic headings, keyboard focus styles, a skip link, image alternative text, and reduced-motion support.
