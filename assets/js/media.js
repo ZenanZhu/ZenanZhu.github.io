@@ -54,9 +54,9 @@ window.PORTFOLIO = {
     accPaper: "",
     mamlPaper: "",
     mamlPoster: "",
-    jointPoster: "",
-    icraPoster: "",
-    controlPoster: "",
+    jointPoster: "https://www.thetracelab.com/uploads/1/1/3/0/113094493/zhu2023irosposter.pdf",
+    icraPoster: "https://robotics.cs.uml.edu/fileadmin/content/publications/2022/ICRA2022-workshop-abstract.pdf",
+    controlPoster: "https://par.nsf.gov/servlets/purl/10570954",
     modelNote: "",
     rlNote: ""
   },
