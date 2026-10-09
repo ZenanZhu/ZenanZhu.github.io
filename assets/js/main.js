@@ -2,6 +2,7 @@
 "use strict";
 (() => {
   const settings = window.PORTFOLIO || {};
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
@@ -29,6 +30,9 @@
     const media = document.createElement(type === "video" ? "video" : "img");
     if (type === "video") {
       media.controls = true;
+      media.muted = true;
+      media.defaultMuted = true;
+      media.autoplay = !reducedMotion.matches;
       media.preload = "metadata";
       media.playsInline = true;
       media.setAttribute("aria-label", item.alt || "Research video");
@@ -56,6 +60,17 @@
       slot.after(captionNode);
     }
     media.src = src;
+    if (type === "video" && media.autoplay) {
+      // Keep manual controls available if the browser blocks autoplay.
+      media.play().catch(() => {});
+    }
+  });
+
+  reducedMotion.addEventListener("change", event => {
+    document.querySelectorAll("[data-media] > video").forEach(video => {
+      video.autoplay = !event.matches;
+      if (event.matches) video.pause();
+    });
   });
 
   [["document", "documents"], ["code", "code"], ["social", "social"]].forEach(([attr, group]) => {

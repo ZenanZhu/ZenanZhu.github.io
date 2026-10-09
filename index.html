@@ -12,9 +12,9 @@
 <meta content="Zenan Zhu | Robotics Research" property="og:title"/>
 <meta content="State estimation, robot learning, and human–robot dynamics. Research at Purdue University." property="og:description"/>
 <!-- Add your real canonical URL and og:image only after deployment. -->
-<link href="assets/css/style.css" rel="stylesheet"/>
-<script defer="" src="assets/js/media.js"></script>
-<script defer="" src="assets/js/main.js"></script>
+<link href="assets/css/style.css?v=20261009-2" rel="stylesheet"/>
+<script defer="" src="assets/js/media.js?v=20261009-2"></script>
+<script defer="" src="assets/js/main.js?v=20261009-2"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -45,7 +45,6 @@
 <a href="https://www.linkedin.com/in/zenan-zhu-4a5a99126/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
 <a data-social="github" hidden="">GitHub</a>
 </nav>
-<p class="availability">I am seeking research and engineering opportunities in robotics.</p>
 </div>
 <!-- Add your own portrait through assets/js/media.js. No stock or borrowed portrait is used. -->
 <figure class="profile-photo">
@@ -74,7 +73,7 @@
 </div>
 </article>
 <article class="project-card" id="maml">
-<div class="project-visual"><div class="project-media" data-media="maml"><div class="media-placeholder"><p class="placeholder-title">Meta-learning</p><p class="placeholder-hint">Framework or results</p></div></div></div>
+<div class="project-visual"><div class="project-media-stack"><div class="project-media" data-media="maml"><div class="media-placeholder"><p class="placeholder-title">Meta-learning</p><p class="placeholder-hint">Framework or results</p></div></div><div class="project-media" data-media="maml-walking-video"><div class="media-placeholder"><p class="placeholder-title">Gait &amp; terrain estimation</p><p class="placeholder-hint">Walking video</p></div></div></div></div>
 <div class="project-body">
 <p class="status published">Published research · RA-L 2026</p>
 <h3>Fast adaptation for gait &amp; terrain estimation</h3>
@@ -89,23 +88,6 @@
 <p>The final paper reports mean gait-phase accuracy of 85%, locomotion-mode accuracy of 100%, and incline RMSE of 2.67° with 3.5 seconds of labeled calibration data per locomotion/speed condition and four fine-tuning steps (Table I). These are results within the reported evaluation, not guarantees for new deployments.</p>
 <p>Adaptation remains supervised. The study evaluates estimation; it does not establish a reduction in effort or metabolic cost from exoskeleton assistance.</p></div></details>
 <div class="project-links"><a href="https://doi.org/10.1109/LRA.2026.3675944" rel="noopener noreferrer" target="_blank">Journal paper <span aria-hidden="true">↗</span></a><a data-document="mamlPoster" hidden="">Poster PDF <span aria-hidden="true">↗</span></a><a data-code="maml" hidden="">Code <span aria-hidden="true">↗</span></a></div>
-</div>
-</article>
-<article class="project-card" id="joint-ekf">
-<div class="project-visual"><div class="project-media" data-media="joint-ekf"><div class="media-placeholder"><p class="placeholder-title">Joint-angle estimation</p><p class="placeholder-hint">Sensor and calibration results</p></div></div></div>
-<div class="project-body">
-<p class="status poster">Poster presentation · IROS 2023</p>
-<h3>Auto-calibrating joint-angle estimation</h3>
-<p class="method">Extended Kalman filtering with fabric sensors</p>
-<p>I developed an EKF-based approach that maps raw fabric-sensor measurements to joint angles while estimating sensor calibration parameters. The estimator combines soft-sensor signals, exoskeleton IMU data, and lower-limb kinematics.</p>
-<div aria-label="Project topics" class="tags"><span>EKF</span><span>Online calibration</span><span>Joint kinematics</span></div>
-<details class="project-details"><summary>Technical details <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4>
-<p>Formulated an estimator that augments joint angles with sensor-to-angle gains and offsets, and uses IMU dynamics and foot-contact kinematics to constrain estimation.</p>
-<h4>Preliminary validation</h4>
-<p>The IROS 2023 poster presents squatting experiments with motion-capture reference data. One scenario uses motion-capture-derived angles as estimator inputs; the raw-fabric-sensor scenario estimates the left knee angle.</p>
-<h4>Scope</h4>
-<p>The formulation targets hip and knee estimation, but the reported raw-sensor validation does not demonstrate simultaneous estimation of all four joints. The linear sensor-to-angle assumption is an approximation, not a complete model of fabric-sensor hysteresis.</p></div></details>
-<div class="project-links"><a data-document="jointPoster" hidden="">Poster PDF <span aria-hidden="true">↗</span></a><a data-code="joint-ekf" hidden="">Code <span aria-hidden="true">↗</span></a></div>
 </div>
 </article>
 <article class="project-card" id="rl">
@@ -123,6 +105,23 @@
 <h4>Scope</h4>
 <p>The replay is a simulation demonstration. It does not by itself establish reduced muscle effort, better assistance, robustness across conditions, or successful transfer to physical hardware.</p></div></details>
 <div class="project-links"><a href="https://myoassist.neumove.org/" rel="noopener noreferrer" target="_blank">MyoAssist framework <span aria-hidden="true">↗</span></a><a data-document="rlNote" hidden="">Project note <span aria-hidden="true">↗</span></a><a data-code="rl" hidden="">Code <span aria-hidden="true">↗</span></a></div>
+</div>
+</article>
+<article class="project-card" id="joint-ekf">
+<div class="project-visual"><div class="project-media" data-media="joint-ekf"><div class="media-placeholder"><p class="placeholder-title">Joint-angle estimation</p><p class="placeholder-hint">Sensor and calibration results</p></div></div></div>
+<div class="project-body">
+<p class="status poster">Poster presentation · IROS 2023</p>
+<h3>Auto-calibrating joint-angle estimation</h3>
+<p class="method">Extended Kalman filtering with fabric sensors</p>
+<p>I developed an EKF-based approach that maps raw fabric-sensor measurements to joint angles while estimating sensor calibration parameters. The estimator combines soft-sensor signals, exoskeleton IMU data, and lower-limb kinematics.</p>
+<div aria-label="Project topics" class="tags"><span>EKF</span><span>Online calibration</span><span>Joint kinematics</span></div>
+<details class="project-details"><summary>Technical details <span aria-hidden="true">+</span></summary><div class="details-content"><h4>My contribution</h4>
+<p>Formulated an estimator that augments joint angles with sensor-to-angle gains and offsets, and uses IMU dynamics and foot-contact kinematics to constrain estimation.</p>
+<h4>Preliminary validation</h4>
+<p>The IROS 2023 poster presents squatting experiments with motion-capture reference data. One scenario uses motion-capture-derived angles as estimator inputs; the raw-fabric-sensor scenario estimates the left knee angle.</p>
+<h4>Scope</h4>
+<p>The formulation targets hip and knee estimation, but the reported raw-sensor validation does not demonstrate simultaneous estimation of all four joints. The linear sensor-to-angle assumption is an approximation, not a complete model of fabric-sensor hysteresis.</p></div></details>
+<div class="project-links"><a data-document="jointPoster" hidden="">Poster PDF <span aria-hidden="true">↗</span></a><a data-code="joint-ekf" hidden="">Code <span aria-hidden="true">↗</span></a></div>
 </div>
 </article>
 <article class="project-card" id="exo-control">

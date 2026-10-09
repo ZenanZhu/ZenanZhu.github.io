@@ -26,6 +26,12 @@ window.PORTFOLIO = {
       alt: "MAML framework for gait phase, locomotion mode, and terrain incline estimation",
       caption: "",
     },
+    "maml-walking-video": {
+      type: "video", src: "assets/videos/MAML_LW_red.mp4",
+      poster: "",
+      alt: "Walking video for gait and terrain estimation",
+      caption: ""
+    },
     "joint-ekf": {
       type: "image", src: "assets/images/IROS2023_poster.svg", // e.g. "assets/images/joint-ekf.png"
       alt: "Knee-angle and sensor calibration estimates compared with motion-capture reference data",
