@@ -25,11 +25,6 @@ window.PORTFOLIO = {
       alt: "Knee-angle and sensor calibration estimates compared with motion-capture reference data",
       caption: ""
     },
-    "reduced-model": {
-      type: "image", src: "", // e.g. "assets/images/reduced-model.png"
-      alt: "Reduced-order coupled human–exoskeleton model and center-of-mass prediction",
-      caption: ""
-    },
     rl: {
       type: "video", src: "assets/videos/replay.mp4", // e.g. "assets/videos/replay.mp4"
       poster: "",            // optional: "assets/images/rl-preview.jpg"
@@ -42,6 +37,11 @@ window.PORTFOLIO = {
       caption: ""
     }
   },
+    "reduced-model": {
+      // type: "image", src: "", // e.g. "assets/images/reduced-model.png"
+      alt: "Reduced-order coupled human–exoskeleton model and center-of-mass prediction",
+      caption: ""
+    },
   documents: {
     resume: "",        // "assets/documents/Zenan_Zhu_Resume.pdf"
     inekfPaper: "",     // approved author manuscript, if desired
