@@ -46,7 +46,7 @@ window.PORTFOLIO = {
       type: "video", src: "assets/videos/replay.mp4", // e.g. "assets/videos/replay.mp4"
       poster: "",            // optional: "assets/images/rl-preview.jpg"
       alt: "RL locomotion replay of a simulated human model with Dephy ExoBoots",
-      caption: "Simulation demonstration using MyoAssist. Ongoing work; no hardware transfer or assistance-benefit claim."
+      caption: "" // "Simulation demonstration using MyoAssist. Ongoing work; no hardware transfer or assistance-benefit claim."
     },
     "exo-control": {
       type: "image", src: "assets/images/Exo_softsensor_control.png", // e.g. "assets/images/exo-control.png"

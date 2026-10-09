@@ -30,6 +30,7 @@
     const media = document.createElement(type === "video" ? "video" : "img");
     if (type === "video") {
       media.controls = true;
+      media.loop = true;
       media.muted = true;
       media.defaultMuted = true;
       media.autoplay = !reducedMotion.matches;

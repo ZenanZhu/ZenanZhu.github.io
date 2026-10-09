@@ -117,8 +117,7 @@ details[open] summary > span::after { content: '−'; visibility: visible; margi
 .teaching-courses { margin: 10px 0 0; padding-left: 18px; font-size: 14px; }
 .teaching-courses li + li { margin-top: 10px; }
 .course-term { font-size: 12px; color: var(--muted); }
-.skills-heading { margin-top: 24px; }
-.skills { font-size: 13px; }
+.lab-resources { margin-top: 24px; }
 .contact-section { border-top: 1px solid var(--line); }
 .contact-section h2 { margin-bottom: 15px; }
 .contact-section p { font-size: 15px; margin-bottom: 0; max-width: 780px; }
