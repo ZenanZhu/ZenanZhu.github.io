@@ -7,21 +7,21 @@
 window.PORTFOLIO = {
   media: {
     portrait: {
-      type: "image", src: "", // e.g. "assets/images/portrait.jpg"
+      type: "image", src: "assets/images/Portrait_gpt.png", // e.g. "assets/images/portrait.jpg"
       alt: "Portrait of Zenan Zhu", caption: ""
     },
     inekf: {
-      type: "image", src: "", // e.g. "assets/images/inekf.jpg"
+      type: "image", src: "assets/images/coordinates_f_v3.svg", // e.g. "assets/images/inekf.jpg"
       alt: "Sensor coordinate frames and validation results for the InEKF project",
       caption: ""
     },
     maml: {
-      type: "image", src: "", // e.g. "assets/images/maml.png"
+      type: "image", src: "assets/images/experiment condition hardware setup.svg", // e.g. "assets/images/maml.png"
       alt: "MAML framework for gait phase, locomotion mode, and terrain incline estimation",
       caption: ""
     },
     "joint-ekf": {
-      type: "image", src: "", // e.g. "assets/images/joint-ekf.png"
+      type: "image", src: "assets/images/IROS2023_poster.svg", // e.g. "assets/images/joint-ekf.png"
       alt: "Knee-angle and sensor calibration estimates compared with motion-capture reference data",
       caption: ""
     },
@@ -37,7 +37,7 @@ window.PORTFOLIO = {
       caption: "Simulation demonstration using MyoAssist. Ongoing work; no hardware transfer or assistance-benefit claim."
     },
     "exo-control": {
-      type: "image", src: "", // e.g. "assets/images/exo-control.png"
+      type: "image", src: "assets/images/Exo_softsensor_control.png", // e.g. "assets/images/exo-control.png"
       alt: "Fabric-sensor measurements and gait-event-based ankle torque commands",
       caption: ""
     }
@@ -58,6 +58,6 @@ window.PORTFOLIO = {
     inekf: "", maml: "", "joint-ekf": "", "reduced-model": "", rl: "", "exo-control": ""
   },
   social: {
-    github: "" // e.g. "https://github.com/YOUR-USERNAME"
+    github: "https://github.com/ZenanZhu" // e.g. "https://github.com/YOUR-USERNAME"
   }
 };
