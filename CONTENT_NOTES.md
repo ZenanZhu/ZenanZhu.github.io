@@ -52,7 +52,7 @@ The introduction uses "Ph.D. student in Mechanical Engineering" at Purdue, consi
 ### Education, teaching, tools, and contact
 - Based on the supplied October 2026 résumés.
 - The website does not repeat course-enrollment counts; these are not essential to the research portfolio.
-- Public email: akitonan@outlook.com, as printed on both résumés.
+- Public email: akitonanzz@163.com, updated at the owner's request on October 27, 2026.
 - Scholar link was taken from the English résumé hyperlink annotation.
 - LinkedIn uses the profile slug in the résumé; its malformed PDF-relative link was normalized to an HTTPS profile link. The owner should confirm it opens the intended profile.
 - No actual GitHub username was supplied. Its link is blank until confirmed.
