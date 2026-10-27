@@ -44,6 +44,11 @@ The introduction uses "Ph.D. student in Mechanical Engineering" at Purdue, consi
 - MyoAssist source framework: <https://myoassist.neumove.org/>.
 - Ask the owner what was trained (human policy, exoskeleton policy, or both), what they changed, and what evaluations were run before making more detailed claims.
 
+### Humanoid table tennis (TT)
+- Paper: <https://arxiv.org/abs/2509.21690>; linked PDF: <https://arxiv.org/pdf/2509.21690>.
+- The owner described their contribution as helping conduct hardware experiments and editing paper figures and videos, and supplied `assets/videos/TT_project.mp4` for this entry.
+- Listed under "Other projects" with credit to Muqun Hu, Wenxi Chen, Wenjing Li, and collaborators. This is a contribution record, not a publication/authorship or algorithm-development claim.
+
 ### Education, teaching, tools, and contact
 - Based on the supplied October 2026 résumés.
 - The website does not repeat course-enrollment counts; these are not essential to the research portfolio.

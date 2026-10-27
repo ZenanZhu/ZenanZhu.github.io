@@ -48,6 +48,13 @@ window.PORTFOLIO = {
       alt: "RL locomotion replay of a simulated human model with Dephy ExoBoots",
       caption: "" // "Simulation demonstration using MyoAssist. Ongoing work; no hardware transfer or assistance-benefit claim."
     },
+    tt: {
+      type: "video", src: "assets/videos/TT_project.mp4",
+      poster: "",
+      autoplay: false,
+      alt: "Humanoid table tennis project video",
+      caption: ""
+    },
     "exo-control": {
       type: "image", src: "assets/images/Exo_softsensor_control.png", // e.g. "assets/images/exo-control.png"
       alt: "Fabric-sensor measurements and gait-event-based ankle torque commands",

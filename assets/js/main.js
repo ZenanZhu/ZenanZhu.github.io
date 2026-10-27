@@ -33,7 +33,7 @@
       media.loop = true;
       media.muted = true;
       media.defaultMuted = true;
-      media.autoplay = !reducedMotion.matches;
+      media.autoplay = item.autoplay !== false && !reducedMotion.matches;
       media.preload = "metadata";
       media.playsInline = true;
       media.setAttribute("aria-label", item.alt || "Research video");
@@ -69,7 +69,8 @@
 
   reducedMotion.addEventListener("change", event => {
     document.querySelectorAll("[data-media] > video").forEach(video => {
-      video.autoplay = !event.matches;
+      const item = (settings.media || {})[video.parentElement.dataset.media] || {};
+      video.autoplay = item.autoplay !== false && !event.matches;
       if (event.matches) video.pause();
     });
   });
