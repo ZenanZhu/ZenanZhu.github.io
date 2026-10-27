@@ -51,7 +51,7 @@ window.PORTFOLIO = {
     tt: {
       type: "video", src: "assets/videos/TT_project.mp4",
       poster: "",
-      autoplay: false,
+      autoplay: true,
       alt: "Humanoid table tennis project video",
       caption: ""
     },
